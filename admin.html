@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Activity Center -SAC</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="/faviconn.ico">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+   <a href="http://www.diu.iiitvadodara.ac.in/"> 
+    <img src="./sac images/logo.jpg" class="logo" height="50px" width="50px"></a>
+
+    <nav class="navbar">
+        <a href="http://localhost:3000">home</a>
+        <a href="#review">About </a>
+        <a href="#blogs">Committee</a>
+        <a href="#products">Team</a>
+        <a href="#featured">Clubs</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+        
+    </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- banner section ends -->
+
+
+<!-- products section starts  -->
+<br><br><br><br><br><br><br><br><br><br>
+<section class="products" id="products">
+
+    <h1 class="heading"> Admin <span>Dashboard</span> </h1>
+
+    <div class="filter-buttons">
+        <div class="buttons active" data-filter="all">Included features are:</div>
+        <div class="buttons" data-filter="arrivals">Search</div>
+        <div class="buttons" data-filter="featured">Insert</div>
+        <div class="buttons" data-filter="special">Delete</div>
+        <div class="buttons" data-filter="seller">Update</div>
+        <div class="buttons" data-filter="seller">Display</div>
+        <div class="buttons" data-filter="seller">Advanced</div>
+        <div class="buttons" data-filter="seller">Aggregate</div>
+        <div class="buttons" data-filter="seller">Upcoming</div>
+
+    </div>
+
+    <div class="box-container">
+        <div class="box" data-item="arrivals">
+
+            <div class="image">
+                <img src="./image/sac.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Display</h3>
+                <div class="price">
+                    <a href="http://localhost:3000/home">  <div class="amount">Display Data</div></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-item="arrivals">
+            <div class="image">
+                <img src="./sac images/Coding.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>Advanced</h3>
+                <div class="price">
+                    <a href="http://localhost:3000/jordaar">  <div class="amount">Search Queries</div></a>
+                </div>
+                <!-- <div class="stars">
+                    <span>+91-987236489</span>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="box" data-item="arrivals">
+            <div class="image">
+                <img src="./sac images/choicematrix.png" alt="">
+            </div>
+            <div class="content">
+                <h3>More</h3>
+                <div class="price">
+                    <a href="http://localhost:3000/extra">  <div class="amount">Extra features</div></a>
+                </div>
+                <!-- <div class="stars">
+                    <span>+91-987236489</span>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="box" data-item="featured">
+            <div class="image">
+                <img src="./sac images/Student.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>Insert </h3>
+                <div class="price">
+                    <a href="http://localhost:3000/addstudent">  <div class="amount">Insert Student</div></a>
+                   
+                </div>
+                <!-- <div class="stars">
+                    <span>+91-987236489</span>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="box" data-item="featured">
+            <div class="image">
+                <img src="./sac images/Events cric.jpeg" alt="">
+               
+            </div>
+            <div class="content">
+                <h3>Insert </h3>
+                <div class="price">
+                    <a href="http://localhost:3000/addevents">  <div class="amount">Insert Event</div></a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-item="featured">
+
+            <div class="image">
+                <img src="./sac images/Cricket.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Insert </h3>
+                <div class="price">
+                    <a href="http://localhost:3000/addequipments">  <div class="amount">Equipments</div></a>
+                   
+                   
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="box" data-item="featured">
+
+            <div class="image">
+                <img src="./sac images/Student.jpeg" alt="">
+               
+            </div>
+            <div class="content">
+                <h3>Insert </h3>
+                <div class="price">
+                    <a href="http://localhost:3000/addsac_members">  <div class="amount">Insert SAC Member</div></a>
+                   
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-item="featured">
+
+            <div class="image">
+                <img src="./sac images/winner.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>Insert </h3>
+                <div class="price">
+                    <a href="http://localhost:3000/addwinners"> <div class="amount">Insert Winner</div></a>
+                   
+                   
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="box" data-item="special">
+            
+            <div class="image">
+                <img src="./sac images/Student.jpeg" alt="">
+                
+            </div>
+            <div class="content">
+                <h3>Delete</h3>
+                <div class="price">
+                 <a href="http://localhost:3000/deletestudent"  ><div class="amount">Delete student</div></a> 
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <div class="box" data-item="special">
+            
+            <div class="image">
+                <img src="./sac images/Events cric.jpeg" alt="">
+              
+            </div>
+            <div class="content">
+                <h3>Delete</h3>
+                <div class="price">
+                 <a href="http://localhost:3000/deleteevents"><div class="amount">Delete Event</div></a> 
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <div class="box" data-item="special">
+            
+            <div class="image">
+                <img src="./sac images/Cricket.jpg" alt="">
+               
+            </div>
+            <div class="content">
+                <h3>Delete</h3>
+                <div class="price">
+                 <a href="http://localhost:3000/deleteequipments"  ><div class="amount">Delete Equipment</div></a> 
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-item="special">
+            
+            <div class="image">
+                <img src="./sac images/Student.jpeg" alt="">
+                
+            </div>
+            <div class="content">
+                <h3>Delete</h3>
+                <div class="price">
+                 <a href="http://localhost:3000/deletesac_members"  ><div class="amount">Delete SAC Member</div></a> 
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-item="special">
+            
+            <div class="image">
+                <img src="./sac images/winner.jpeg" alt="">
+                
+            </div>
+            <div class="content">
+                <h3>Delete</h3>
+                <div class="price">
+                 <a href="http://localhost:3000/deletewinners"  ><div class="amount">Delete Winner</div></a> 
+                    
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="box" data-item="seller">
+            <div class="image">
+                <img src="./sac images/Student.jpeg" alt="">
+                
+            </div>
+            <div class="content">
+                <h3>Update</h3>
+                <div class="price">
+                  <a href="http://localhost:3000/updatestudent">  <div class="amount">Update Student</div></a>
+            
+                </div>
+                <!-- <div class="stars">
+                    <span>+91-987236489</span>
+                </div> -->
+            </div>
+        </div>
+
+
+        <div class="box" data-item="seller">
+
+            <div class="image">
+                <img src="./sac images/Cricket.jpg" alt="">
+             
+            </div>
+            <div class="content">
+                <h3>Update</h3>
+                <div class="price">
+                  <a href="http://localhost:3000/updateequipment">  <div class="amount">Update Equipment</div></a>
+            
+                </div>
+                <!-- <div class="stars">
+                    <span>+91-987236489</span>
+                </div> -->
+            </div>
+        </div>
+
+
+
+
+
+        <div class="box" data-item="arrivals">
+
+            <div class="image">
+                <img src="./sac images/Student.jpeg" alt="">
+                
+            </div>
+            <div class="content">
+                <h3>Search</h3>
+                <div class="price">
+                    <a href="http://localhost:3000/searchstudent">  <div class="amount">Search Student</div></a>
+                </div>
+                <!-- <div class="stars">
+                    <span>+91-987236489</span>
+                </div> -->
+            </div>
+        </div>
+        <div class="box" data-item="arrivals">
+
+            <div class="image">
+                <img src="./image/antakshari.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>Search</h3>
+                <div class="price">
+                    <a href="http://localhost:3000/searchcommittee">  <div class="amount">Search Committee</div></a>
+                </div>
+                <!-- <div class="stars">
+                    <span>+91-987236489</span>
+                </div> -->
+            </div>
+        </div>
+        <div class="box" data-item="arrivals">
+
+            <div class="image">
+                <img src="./sac images/confero.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Search</h3>
+                <div class="price">
+                    <a href="http://localhost:3000/searchclub">  <div class="amount">Search Club</div></a>
+                </div>
+                <!-- <div class="stars">
+                    <span>+91-987236489</span>
+                </div> -->
+            </div>
+        </div>
+        <div class="box" data-item="arrivals">
+
+            <div class="image">
+                <img src="./sac images/Events cric.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>Search</h3>
+                <div class="price">
+                    <a href="http://localhost:3000/searchevents">  <div class="amount">Search Event</div></a>
+                </div>
+                <!-- <div class="stars">
+                    <span>+91-987236489</span>
+                </div> -->
+            </div>
+        </div>
+        <div class="box" data-item="arrivals">
+
+            <div class="image">
+                <img src="./sac images/Cricket.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Search</h3>
+                <div class="price">
+                    <a href="http://localhost:3000/searchequipments">  <div class="amount">Search Equipment</div></a>
+                </div>
+                <!-- <div class="stars">
+                    <span>+91-987236489</span>
+                </div> -->
+            </div>
+        </div>
+        
+    </div>
+
+</section>
+
+<!-- products section ends -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>SAC - Student Activity Center forms the backbone of all extra-curricular activities organised in IIIT-VICD</p>
+        </div>
+
+        <div class="box">
+            <h3>Committee</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Sports </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Technical </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Cultural </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Literature </a>
+            
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> About </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Committee </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Team </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Clubs </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> contact </a>
+            
+        </div>
+
+        <div class="box">
+            <h3>Clubs</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Vector </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>Stockops </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Argo </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Essence </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Confero </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Indoor </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Cricket </a>
+        </div>
+
+    </div>
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-instagram"></a>
+    </div>
+
+    <div class="credit"> DBMS <span>(CS262)</span> </div>
+    
+</section>
