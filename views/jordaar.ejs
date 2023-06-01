@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Activity Center - SAC</title>
+    <link rel="icon" href="/faviconn.ico">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/home.css">
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="/css/style.css">
+
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="http://www.diu.iiitvadodara.ac.in/">
+          <img src="/sac images/logo.jpg" class="logo" height="50px" width="50px"></a>
+    
+        <nav class="navbar">
+          <a href="http://localhost:3000">Home</a>
+          <a href="#review">About </a>
+          <a href="#blogs">Committee</a>
+          <a href="#products">Members</a>
+          <a href="#featured">Clubs</a>
+          <a href="#events">Events</a>
+          <a href="#contact">Equipments</a>
+    
+        </nav>
+    
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn"><a href="http://localhost:3000/jordaar" class="fas fa-search"></a></div>
+        </div>
+    
+    
+      </header>
+      <br><br><br><br><br><br><br><br>
+
+    <h1 style="text-align: center;">Search Queries</h1>
+    <br>
+    <div class="container">
+        <div class="tables_list">
+            <label for="sqlQ">Type your query below</label>
+            <br>
+            <textarea form = "tableForm_advance" name="sqlQuery" id="sqlQ" cols="100" rows="10" class="sqlQ"></textarea>
+            <form method="get" action="/jordaar/sql" id="tableForm_advance" class="tableForm_advance">
+                <div class="advance_submit">
+                    <input type="submit" id="showBtn" class="showBtn">
+                </div>
+            </form>
+        </div>
+
+        <div class="advmsg">
+            <h1>
+                <%= message %>
+            </h1>
+        </div>
+
+        <table>
+            <tr>
+                <% for (let i = 0; i < columns.length; i ++) { %>
+                    <th><%= columns[i].name %></th>
+                <% } %>
+            </tr>
+            <% for (let i = 0; i < someData.length; i ++ ) { %>
+                <tr>
+                    <% for (let info in someData[i] ) { %>
+    
+                            <td><%= someData[i][info]%></td>       
+                    
+                    <% } %>
+                </tr>
+            <% } %>
+        </table>
+
+    </div>
+</body>
+
+</html>

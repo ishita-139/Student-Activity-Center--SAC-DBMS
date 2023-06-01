@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Activity Center - SAC</title>
+    <link rel="icon" href="/faviconn.ico">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/home.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/css/style.css">
+
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="http://www.diu.iiitvadodara.ac.in/">
+            <img src="/sac images/logo.jpg" class="logo" height="50px" width="50px"></a>
+
+        <nav class="navbar">
+            <a href="http://localhost:3000">Home</a>
+            <a href="#review">About </a>
+            <a href="#blogs">Committee</a>
+            <a href="#products">Members</a>
+            <a href="#featured">Clubs</a>
+            <a href="#events">Events</a>
+            <a href="#contact">Equipments</a>
+
+        </nav>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn"><a href="http://localhost:3000/jordaar" class="fas fa-search"></a></div>
+        </div>
+    
+
+    </header>
+    <br><br><br><br><br><br><br>
+    <h1 class="heading"> Everything about <span>Essence</span> </h1>
+    <div class="container">
+        <div class="tables_list">
+            <label for="tables">Choose a Table</label>
+            <select class="dropdown" id="tables" name="tablelist" form="tableForm">
+                <option>events</option>
+                <option>equipments</option>
+            </select>
+            <form method="get" action="/essence" id="tableForm">
+                <input type="submit" id="showBtn" class="showBtn">
+            </form>
+        </div>
+
+        <% if (name !=='' ) { %>
+            <table>
+                <tr>
+                    <% for (let i=0; i < columns.length; i ++ ) { %>
+                        <th>
+                            <%= columns[i].name%>
+                        </th>
+                        <% } %>
+                </tr>
+                <% for (let i=0; i < tuples.length; i ++ ) { %>
+                    <tr>
+                        <%for (let attr in tuples[i] ) { %>
+                            <td>
+                                <%= tuples[i][attr] %>
+                            </td>
+                            <%} %>
+                    </tr>
+                    <% } %>
+
+            </table>
+            <%}%>
+
+    </div>
+</body>
+
+</html>

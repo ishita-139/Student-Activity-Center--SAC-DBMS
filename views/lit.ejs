@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Activity Center - SAC</title>
+  <link rel="stylesheet" href="/css/home.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="icon" href="/faviconn.ico">
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="http://www.diu.iiitvadodara.ac.in/">
+      <img src="/sac images/logo.jpg" class="logo" height="50px" width="50px"></a>
+
+      <nav class="navbar">
+        <a href="http://localhost:3000">Home</a>
+        <a href="./admin.html">Admin</a>
+        <a href="">Committee</a>
+        <a href="">Members</a>
+        <a href="">Clubs</a>
+        <a href="">Events</a>
+        <a href="">Equipments</a>
+  
+      </nav>
+
+    <div class="icons">
+      <div id="menu-btn" class="fas fa-bars"></div>
+      <div id="search-btn"><a href="http://localhost:3000/jordaar" class="fas fa-search"></a></div>
+  </div>
+
+
+  </header>
+
+  <!-- header section ends -->
+
+  <!-- home section starts  -->
+
+  <section class="home" id="home">
+
+    <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide" style="background:url(image/lit\ front.png) no-repeat">
+          <div class="content">
+          </div>
+        </div>
+        <div class="swiper-slide slide" style="background:url(image/Banner2.jpg) no-repeat">
+          <div class="content">
+          </div>
+        </div>
+        <!-- <div class="swiper-slide slide" style="background:url(image/sac.png) no-repeat">
+                   <div class="content">
+                       <span>IIITV-ICD</span>
+                       <h3>Student Activity Center</h3>
+                       <a href="#" class="btn">Know more</a>
+                   </div>
+               </div> -->
+
+        <div class="swiper-slide slide" style="background:url(image/Banner-3.jpg) no-repeat">
+          <div class="content">
+          </div>
+        </div>
+        <div class="swiper-slide slide" style="background:url(image/swiper-slide1.jpeg) no-repeat">
+          <div class="content">
+
+          </div>
+        </div>
+
+
+        <div class="swiper-slide slide" style="background:url(image/swiper-slide0.jpeg) no-repeat">
+          <div class="content">
+          </div>
+        </div>
+        <div class="swiper-slide slide" style="background:url(image/swiper-slide2.jpeg) no-repeat">
+          <div class="content">
+          </div>
+        </div>
+        <div class="swiper-slide slide" style="background:url(image/swiper-slide3.jpeg) no-repeat">
+          <div class="content">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+    </div>
+
+  </section>
+
+  <!-- home section ends -->
+  <section class="review" id="review">
+    <!-- <img src="./sac images/sac about.jpg" justify-content="right" display="flex"> -->
+    <div class="content" data-aos="fade-right">
+      <h3>About Literature Committee</h3>
+      <p>The Literature Committee encourages engaged discussion and reflective consideration of literature and creative
+        writing course offerings in the Department of English and Philosophy
+        From time to time, the society organizes a rich and diverse array of literary activities such as debates,
+        declamations, group discussions, poetry writing and recitation, shortstory writing, quiz contests,
+        interactive/lecture sessions, etc.
+      <p>
+    </div>
+
+  </section>
+  <h1 class="heading"> Everything about <span>Literature Committee</span> </h1>
+
+
+  <div class="container">
+    <div class="tables_list">
+      <select class="dropdown" id="tables" name="name" form="tableForm">
+        <option>Committee_Members</option>
+        <option>events</option>
+        <option>club</option>
+        <option>equipments</option>
+      </select>
+      <form method="get" action="/know_more_lit" id="tableForm">
+        <input type="submit" id="showBtn" class="showBtn" name="Press">
+      </form>
+      <br><br>
+    </div>
+    <% if (name !=='' ) { %>
+      <table style="margin-bottom: 20%;">
+        <tr>
+          <% for (let i=0; i < columns.length; i ++ ) { %>
+            <th>
+              <%= columns[i].name%>
+            </th>
+            <% } %>
+        </tr>
+        <% for (let i=0; i < tuples.length; i ++ ) { %>
+          <tr>
+            <%for (let attr in tuples[i] ) { %>
+              <td>
+                <%= tuples[i][attr] %>
+              </td>
+              <%} %>
+          </tr>
+          <% } %>
+
+      </table>
+      <%}%>
+</body>
+
+</html>

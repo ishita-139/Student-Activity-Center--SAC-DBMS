@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Activity Center - SAC</title>
+    <link rel="icon" href="/faviconn.ico">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    
+    <link rel="stylesheet" href="/css/home.css">
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/stylea.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="http://www.diu.iiitvadodara.ac.in/">
+          <img src="/sac images/logo.jpg" class="logo" height="50px" width="50px"></a>
+    
+          <nav class="navbar">
+            <a href="http://localhost:3000">Home</a>
+            <a href="./admin.html">Admin</a>
+            <a href="">About </a>
+            <a href="">Committee</a>
+            <a href="">Members</a>
+            <a href="">Clubs</a>
+            <a href="">Events</a>
+            <a href="">Equipments</a>
+      
+          </nav>
+    
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn"><a href="http://localhost:3000/jordaar" class="fas fa-search"></a></div>
+        </div>
+    
+    
+      </header>
+      <br><br><br><br><br><br><br><br><br>
+    <div style="display:inline-block; width: 20%; align-items: center; justify-content: center; margin-left: 40%;">
+        <div style="display:inline-block; width: 100%; padding: 10px; justify-content: center; align-items: center;">
+
+
+            <div id="employeeFormContainer" class="empadd">
+                <h2>Enter Details</h2>
+                <form method="POST" action="/addwinners">
+
+                    <label for="age">Event ID</label>
+                    <input type="number" id="event_id" name="event_id"><br>
+
+                    <label for="id">Winner ID</label>
+                    <input type="number" id="winner_id" name="winner_id"><br>
+
+        
+                    <label for="name">Position</label>
+                    <input type="number" id="post" name="post"><br>
+
+                    
+                    <input type="submit" value="Add Entry">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
