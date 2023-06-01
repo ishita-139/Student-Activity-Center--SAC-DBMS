@@ -1,0 +1,165 @@
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+th,td {
+    text-align: left;
+    padding: 10px;
+    width: 20px;
+    border-bottom: 1px solid #ddd;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+th {
+    background-color: #49b8e3;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Style the form container */
+#employeeFormContainer {
+    display: block;
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+
+.empadd {
+    background-color:  #A5D7E8;
+}
+
+#searchContainer {
+    position: relative;
+    top: -100px;
+    left: 50px;
+    display: block;
+    margin: 0 auto;
+    max-width: 500px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px solid black;
+    padding: 10px;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Style the form labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style the form inputs */
+input[type="text"],
+input[type="number"],
+select {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 5px #aaa;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #8d5c27;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #eb4d4b;
+}
+
+.view-details {
+    background-color: #dd9f84;
+    /* set background color */
+    color: rgb(0, 0, 0);
+    /* set font color */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 20px;
+    /* set button padding */
+    text-align: center;
+    /* center button text */
+    display: inline-block;
+    /* make button inline */
+    font-size: 14px;
+    /* set font size */
+    margin: 4px 2px;
+    /* set margin */
+    cursor: pointer;
+    /* add cursor pointer */
+    border-radius: 5px;
+}
+
+
+.add-contact {
+    background-color: #dd9f84;
+    /* set background color */
+    color: rgb(0, 0, 0);
+    /* set font color */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 20px;
+    /* set button padding */
+    text-align: center;
+    /* center button text */
+    display: inline-block;
+    /* make button inline */
+    font-size: 14px;
+    /* set font size */
+    margin: 4px 2px;
+    /* set margin */
+    cursor: pointer;
+    /* add cursor pointer */
+    border-radius: 5px;
+}
+
+.add-salary {
+    background-color: #dd9f84;
+    /* set background color */
+    color: rgb(0, 0, 0);
+    /* set font color */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 20px;
+    /* set button padding */
+    text-align: center;
+    /* center button text */
+    display: inline-block;
+    /* make button inline */
+    font-size: 14px;
+    /* set font size */
+    margin: 4px 2px;
+    /* set margin */
+    cursor: pointer;
+    /* add cursor pointer */
+    border-radius: 5px;
+}
+
+button {
+    color: rgb(54, 12, 12);
+    /* set the text color to white */
+    background-color: rgb(100, 153, 177);
+    /* set the background color to blue */
+    border: none;
+    /* remove the button border */
+    padding: 10px 20px;
+    /* add some padding to the button */
+    box-shadow: 0 0 10px rgba(206, 176, 176, 0.59);
+}
