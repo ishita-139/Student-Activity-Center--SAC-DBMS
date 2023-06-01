@@ -1,0 +1,187 @@
+.Hello, .container, .tables_list, .insert_form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    background-color: #dadada;
+}
+
+h1 {
+    margin-top: 3%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+.container a {
+    display: block;
+    width: 20%;
+    height: 25px;
+    text-decoration: none;
+    background: linear-gradient(to bottom, #eed2fa, #d68df7);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+label {
+    color: black;
+    margin-bottom: 0.5%;
+    font-size: 25px;
+}
+
+select, .showBtn, .insert_form_submit {
+    width: 100%;
+    min-width: 15ch;
+    max-width: 30ch;
+    border: 1px solid var(--select-border);
+    border-radius: 0em;
+    padding: 0.25em 0.5em;
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
+
+.showBtn, .insert_form_submit {
+    margin-top: 3%;
+    width: 2rem;
+}
+
+.showBtn:hover, .insert_form_submit:hover {
+    background: #eb4d4b;
+    color: #fff;
+    border: 1px solid #eee;
+}
+
+table {
+    border-collapse: collapse;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    border-radius: 0px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 1% auto;
+}
+/* 
+table tr td {
+    background-color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    text-align: center;
+}
+
+table tr th {
+    background-color: #eb4d4b;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+table tr:nth-child(even) td {
+    background-color: #f2f2f2;
+}
+
+table tr:hover td {
+    background-color: #d29994;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  } */
+  
+  table td,
+  table th {
+    padding: 12px 15px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+  }
+  
+  table th {
+    background-color: #c64646;
+    font-weight: bold;
+  }
+  
+  table tr:hover {
+    background-color: #ff8282;
+  }
+  
+  @media screen and (max-width: 600px) {
+    table {
+      width: 100%;
+    }
+    table td,
+    table th {
+      padding: 8px;
+    }
+  }
+
+.insert_form {
+    /*display: inline-block;*/
+    display: flex;
+    justify-content: center;
+}
+
+.insertForm input:not(.insert_form_submit)  {
+    width: 100%;
+    min-width: 15ch;
+    max-width: 30ch;
+    border: 1px solid var(--select-border);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    font-size: 1.25rem;
+    line-height: 1.1;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
+
+.insertForm select {
+    width: 100%;
+}
+
+.insert_btn, .advance_submit {
+    display: flex;
+    justify-content: center;
+}
+
+.input_query {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_query label{
+    margin-bottom: 1%;
+}
+.input_query textarea {
+    width: 100%;
+    min-width: 15ch;
+    max-width: 30ch;
+    margin-top: 5%;
+    border: 1px solid var(--select-border);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    font-size: 1.25rem;
+    line-height: 1.1;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
